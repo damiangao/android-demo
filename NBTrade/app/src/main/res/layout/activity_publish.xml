@@ -1,0 +1,66 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Name:"/>
+        <EditText android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:hint="Input goods name"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Category:"/>
+        <Spinner
+            android:id="@+id/category"
+            android:layout_height="wrap_content"
+
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Price:"/>
+        <EditText
+            android:id="@+id/price"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/choose_img"
+
+            android:layout_height="wrap_content"
+            android:layout_span="1"
+            android:text="选择图片"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Image:"/>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Describe:"/>
+        <EditText
+            android:id="@+id/describe"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/publish"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Publish"/>
+    </TableRow>
+</TableLayout>
